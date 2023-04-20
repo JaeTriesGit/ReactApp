@@ -1,0 +1,90 @@
+$ReactCyan:#61DAFB;
+
+*{
+    margin:0;padding:0;
+    font-family:'Inter', sans-serif;
+    color:white;
+}
+
+body{
+    background-color:#282D35;
+    background-image:url('./assets/Vector.svg');
+    background-repeat: no-repeat;
+    background-size:50%;
+    background-position-x:150%;
+    background-position-y:50%;
+    background-blend-mode:overlay;
+}
+
+#root{
+    width:100%;
+    position:absolute;
+    top:0;
+}
+
+.MainFrame{
+    position:relative;
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    left:5%;
+}
+
+.ReactFacts{
+    color:$ReactCyan;
+}
+
+.FunFacts{
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.reactImg{
+    width:50px;height:50px;
+}
+
+.ReactLogo{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:10px;
+    font-size:30px;
+    color:$ReactCyan;
+    font-weight:600;
+}
+
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+    height:100px;
+    background-color:#21222A;
+    margin-bottom:20px;
+}
+
+.RC{
+    font-size:16px;
+    font-weight:600;
+}
+
+ul{
+    position:relative;
+    left:5%;
+    list-style-position:outside;
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:left;
+    gap:3px;
+    width:90%;
+}
+
+ul li::before{
+    content:"\2022"+'   ';
+    color:$ReactCyan;
+    font-size:30px;
+}
